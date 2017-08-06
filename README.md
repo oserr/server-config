@@ -1,6 +1,6 @@
 # Server Config
 
-A brief description of server configurations to setup a an Apache-PostgreSQL web server on [AmazonLightsail][1] for a [Udacity][2] project.
+A brief description of server configurations to setup an Apache-PostgreSQL-Flask web server on [AmazonLightsail][1] for a [Udacity][2] project.
 
 ## Browsing the app
 
@@ -8,7 +8,7 @@ A brief description of server configurations to setup a an Apache-PostgreSQL web
 http://34.212.34.224/
 ```
 
-## Accessin the app via ssh
+## Accessing the app via ssh
 
 ```bash
 ssh -p 2200 -i grader_key grader@34.212.34.224
@@ -56,7 +56,7 @@ Before installing the python packages with `pip`, I installed anaconda so I coul
     sudo ufw status
     ```
 * configured firewall ports in AmazonLightsail console to match settings configured via `ufw`
-* cloned git repo `https://github.com/oserr/itemcatalog.git` to `/var/www/html`
+* cloned git repo `https://github.com/oserr/itemcatalog.git` to `/var/www/html/itemcatalog`
 * created *app.wsgi* in `/var/www/html/itemcatalog`:
     ```python
     import sys
