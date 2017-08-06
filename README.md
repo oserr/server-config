@@ -35,10 +35,12 @@ Before installing the python packages with `pip`, I installed anaconda so I coul
     * created ssh key pair for *grader* and added the public key to the list of authorized keys
     * granted sudo permissions to *grader*
 * modified `/etc/ssh/sshd_config`:
-    ||Setting||From||To||
-    |Port|22|2200|
-    |PasswordAuthentication|yes|no|
-    |PasswordRootLogin|prohibit-password|no|
+
+    | Setting                | From              | To  |
+    | ---------------------- | ----------------- | --- |
+    | Port                   | 22                | 2200|
+    | PasswordAuthentication | yes               | no  |
+    | PasswordRootLogin      | prohibit-password | no  |
     * `Port 22` -> `Port 2200`
     * `PasswordAuthentication yes` -> `PasswordAuthentication no`
     * `PermitRootLogin prohibit-password` -> `PermitRootLogin no`
