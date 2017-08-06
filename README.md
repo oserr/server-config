@@ -41,9 +41,7 @@ Before installing the python packages with `pip`, I installed anaconda so I coul
     | Port                   | 22                | 2200|
     | PasswordAuthentication | yes               | no  |
     | PasswordRootLogin      | prohibit-password | no  |
-    * `Port 22` -> `Port 2200`
-    * `PasswordAuthentication yes` -> `PasswordAuthentication no`
-    * `PermitRootLogin prohibit-password` -> `PermitRootLogin no`
+
 * restarted ssh service: `sudo service ssh restart`
 * created database *itemcatalog*: `sudo -u postgres createdb itemcatalog`
 * created database user *catalog*: `sudo -u postgres createuser --pwprompt catalog`
